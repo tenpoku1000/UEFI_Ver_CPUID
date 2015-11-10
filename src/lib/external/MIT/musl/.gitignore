@@ -1,0 +1,7 @@
+*.o
+*.lo
+*.a
+*.so
+*.so.1
+tools/musl-gcc
+lib/musl-gcc.specs

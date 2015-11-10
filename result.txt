@@ -1,0 +1,12 @@
+Firmware Vendor: American Megatrends
+Firmware Revision: 0x5000b
+UEFI Version: 2.40
+SGX: enable
+SMEP: enable
+INVPCID: enable
+MPX: enable
+SMAP: enable
+CLFLUSHOPT: enable
+PREFETCHWT1: disable
+PKU: disable
+OSPKE: disable
