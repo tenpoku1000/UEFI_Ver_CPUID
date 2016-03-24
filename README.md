@@ -42,6 +42,7 @@ PC の機種によっては、Boot 順序設定変更を恒久的な設定変更
 
 ### MIT License
 * musl libc http://www.musl-libc.org/
+
 ### BSD License
 * gnu-efi http://sourceforge.net/projects/gnu-efi/
 
