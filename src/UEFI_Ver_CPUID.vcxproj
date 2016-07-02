@@ -10,7 +10,7 @@
     <ProjectGuid>{9ADE7E75-DAB0-4A77-B040-F5722956BED7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>UEFI_Ver_CPUID</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
