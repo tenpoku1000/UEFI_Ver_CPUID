@@ -1,6 +1,8 @@
 ﻿# UEFI_Ver_CPUID
 
-UEFI version 等と CPUID 命令の取得結果の表示を行う UEFI アプリケーションです。
+UEFI version 等と CPUID 命令の取得結果の表示・保存を行う UEFI アプリケーションです。
+
+ルート・フォルダに情報取得結果ファイル result.txt が出力されます。
 
 [Core i3-6100(Skylake) + ASUS H170-PRO 取得結果](https://raw.githubusercontent.com/tenpoku1000/UEFI_Ver_CPUID/master/result.txt)
 
