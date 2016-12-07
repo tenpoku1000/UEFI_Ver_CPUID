@@ -66,6 +66,29 @@ EFI_STATUS efi_main(EFI_HANDLE image_handle, EFI_SYSTEM_TABLE* system_table)
     write_print_info1(efi_file, L"PKU: %s", GET_CPU_INFO(cpu_info, CPU_INFO_ECX, 3));
     write_print_info1(efi_file, L"OSPKE: %s", GET_CPU_INFO(cpu_info, CPU_INFO_ECX, 4));
 
+    memset(cpu_info, 0, sizeof(cpu_info));
+
+    __cpuid(cpu_info, 0x06);
+
+    write_print_info1(
+        efi_file,
+        L"ARAT. APIC-Timer-always-running feature: %s",
+        GET_CPU_INFO(cpu_info, CPU_INFO_EAX, 2)
+    );
+
+    memset(cpu_info, 0, sizeof(cpu_info));
+
+    __cpuid(cpu_info, 0x80000007);
+
+    write_print_info1(efi_file, L"Invariant TSC: %s", GET_CPU_INFO(cpu_info, CPU_INFO_EDX, 8));
+
+    memset(cpu_info, 0, sizeof(cpu_info));
+
+    __cpuid(cpu_info, 0x01);
+
+    write_print_info1(efi_file, L"x2APIC: %s", GET_CPU_INFO(cpu_info, CPU_INFO_ECX, 21));
+    write_print_info1(efi_file, L"TSC-Deadline: %s", GET_CPU_INFO(cpu_info, CPU_INFO_ECX, 24));
+
     close_print_info(efi_file);
 
     reset_system(EFI_SUCCESS);

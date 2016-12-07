@@ -10,3 +10,8 @@ CLFLUSHOPT: enable
 PREFETCHWT1: disable
 PKU: disable
 OSPKE: disable
+ARAT. APIC-Timer-always-running feature: enable
+Invariant TSC: enable
+x2APIC: enable
+TSC-Deadline: enable
+
